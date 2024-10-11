@@ -1,0 +1,416 @@
+button {
+  background: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus,
+input:focus {
+  outline: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('styles/comala.webp'); /* Cambia esto a la ruta de tu imagen */
+    background-size: cover; /* Asegúrate de que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #fff; /* Cambia el color del texto si es necesario */
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+  height: 100vh;
+}
+
+#home {
+  background-color: #ddd;
+}
+
+.skew {
+  transform: skew(-20deg);
+}
+
+.un-skew {
+  transform: skew(20deg);
+}
+
+#nav-wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+#nav {
+  background-color: #fff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  font-family: "Saira Semi Condensed", sans-serif;
+  height: 4em;
+  overflow: hidden;
+}
+#nav.nav-visible {
+  height: 100%;
+  overflow: auto;
+}
+
+.nav {
+  display: flex;
+  height: 4em;
+  line-height: 4em;
+  flex-grow: 1;
+}
+
+.nav-link,
+.logo {
+  padding: 0 1em;
+}
+
+span.gradient {
+  background: #e60f0f;
+  background: -webkit-linear-gradient(45deg, #e60f0f, #ff5858);
+  background: linear-gradient(45deg, #f857a8, #ff5858);
+  padding: 0 1em;
+  position: relative;
+  right: 1em;
+  margin-right: auto;
+}
+span.gradient:hover {
+  animation-name: logo-hover;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.17, 0.57, 0.31, 0.85);
+}
+
+h1.logo {
+  font-weight: 300;
+  font-size: 1.75em;
+  line-height: 0.75em;
+  color: #ffffff;
+}
+
+h1.logo a, a:active, a:hover, a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 0.5px solid #ddd;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: #f15337;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.btn-nav {
+  color: #f857a8;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+div.container
+{
+    font-family: Raleway;
+    margin: 0 auto;
+	padding: 2em 3em;
+	text-align: center;
+}
+
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.red
+{
+    background: #f44336;
+}
+
+
+.indigo
+{
+    background: #3f51b5;
+}
+
+.blue
+{
+    background: linear-gradient(45deg, #f857a8, #ff5858);
+}
+
+.cyan
+{
+    background: #00bcd4;
+}
+
+.teal
+{
+    background: #009688;
+}
+
+.green
+{
+    background: #4caf50;
+}
+
+.lightGreen
+{
+    background: #8bc34a;
+}
+
+.lime
+{
+    background: #c0ca33;
+}
+
+.yellow
+{
+    background: #fdd835;
+}
+
+.amber
+{
+    background: #ffc107;
+}
+
+.orange
+{
+    background: #ff9800
+}
+
+.deepOrange
+{
+    background: #ff5722;
+}
+
+.brown
+{
+    background: #795548;
+}
+
+.gray
+{
+    background: #9e9e9e;
+}
+
+/* Top and Bottom borders go out */
+div.topBotomBordersOut a:before, div.topBotomBordersOut a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.topBotomBordersOut a:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersOut a:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* Top and Bottom borders come in */
+div.topBotomBordersIn a:before, div.topBotomBordersIn a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.topBotomBordersIn a:before
+{
+    top: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersIn a:after
+{
+    bottom: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+/* Top border go down and Left border appears */
+div.topLeftBorders a:before
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 2px;
+    height: 0px;
+    background: #FFF;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+div.topLeftBorders a:after
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+div.topLeftBorders a:hover:before
+{
+    height: 100%;
+}
+
+div.topLeftBorders a:hover:after
+{
+    opacity: 0;
+    top: 100%;
+}
+/* Circle behind */
+div.circleBehind a:before, div.circleBehind a:after
+{
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #0277bd;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    border-radius: 50%;
+    background: transparent;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+div.circleBehind a:after
+{
+    border-width: 2px;
+    transition: all 0.4s;
+}
+
+div.circleBehind a:hover:before
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+div.circleBehind a:hover:after
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1.3);
+}
+
+@media (min-width: 800px) {
+  #nav-wrapper {
+    overflow: hidden;
+  }
+  #nav {
+    overflow: hidden;
+    flex-direction: row;
+  }
+  .nav-link {
+    border-top: none;
+  }
+  .right {
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    left: 1.5em;
+    height: auto;
+  }
+  .btn-nav {
+    display: none;
+  }
+  .nav a:link.active, a:visited.active, a:active.active {
+    background: #f857a8;
+    background: -webkit-linear-gradient(45deg, #f857a8, #ff5858);
+    background: linear-gradient(45deg, #f857a8, #ff5858);
+    color: #fff;
+  }
+  .nav-link-span {
+    transform: skew(20deg);
+    display: inline-block;
+  }
+  .nav-link {
+    transform: skew(-20deg);
+    color: #777;
+    text-decoration: none;
+  }
+  .nav-link:last-child {
+    padding-right: 3em;
+  }
+  a:hover.nav-link:not(.active) {
+    color: #444;
+    background: #ddd;
+    background: linear-gradient(45deg, #fff, #ddd);
+  }
+}
+@keyframes logo-hover {
+  20% {
+    padding-right: 0em;
+  }
+  100% {
+    padding-right: 5em;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
