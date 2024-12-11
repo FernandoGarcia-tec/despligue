@@ -88,7 +88,7 @@ function mostrarDetalleNegocio(negocio) {
     document.getElementById('negocioCategoria').textContent = negocio.categoria;
     document.getElementById('negocioDescripcion').textContent = negocio.descripcion;
 
-
+    
     // Generate Google Maps iframe
     const mapsIframe = `<iframe 
         width="100%" 

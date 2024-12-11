@@ -3,8 +3,6 @@ function eliminarNegocio() {
     const negocioId = document.getElementById('negocioId').textContent; // Asegúrate de que exista un elemento con id 'negocioId'
     console.log('Negocio a eliminar:', negocioId);
     // Confirmar la eliminación
-    
-
     if (confirm('¿Estás seguro de que deseas eliminar este negocio?')) {
         fetch(`/api/delete-negocio/${negocioId}`, {
             method: 'DELETE'

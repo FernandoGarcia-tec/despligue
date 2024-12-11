@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
             
             // Añadir negocios de comida a la lista del directorio
             const listaNegocios = document.getElementById('listaNegocios');
-
+            
             productosComida.forEach((product, index) => {
                 const listItem = document.createElement('li');
                 listItem.textContent = product.nombre;

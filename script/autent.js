@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 const loginLink = document.getElementById("login-link");
                 if (loginLink) {
                     loginLink.style.display = "none";
-
+                    
                 }
 
                 const welcomeMessage = document.getElementById("welcome-message");
