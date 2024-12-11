@@ -1,0 +1,323 @@
+[debug] [2024-10-13T00:10:51.628Z] ----------------------------------------------------------------------
+[debug] [2024-10-13T00:10:51.630Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\52312\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2024-10-13T00:10:51.631Z] CLI Version:   13.22.0
+[debug] [2024-10-13T00:10:51.631Z] Platform:      win32
+[debug] [2024-10-13T00:10:51.631Z] Node Version:  v20.11.1
+[debug] [2024-10-13T00:10:51.631Z] Time:          Sat Oct 12 2024 18:10:51 GMT-0600 (hora estándar central)
+[debug] [2024-10-13T00:10:51.631Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-13T00:10:51.776Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-13T00:10:51.777Z] > authorizing via signed-in user (garciaquintero00@gmail.com)
+[debug] [2024-10-13T00:10:51.922Z] openjdk version "17.0.10" 2024-01-16 LTS
+
+[debug] [2024-10-13T00:10:51.923Z] OpenJDK Runtime Environment Microsoft-8902769 (build 17.0.10+7-LTS)
+OpenJDK 64-Bit Server VM Microsoft-8902769 (build 17.0.10+7-LTS, mixed mode, sharing)
+
+[debug] [2024-10-13T00:10:51.935Z] Parsed Java major version: 17
+[info] i  emulators: Starting emulators: functions, firestore, dataconnect, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, firestore, dataconnect, extensions"}}
+[debug] [2024-10-13T00:10:51.938Z] Checked if tokens are valid: true, expires at: 1728781781096
+[debug] [2024-10-13T00:10:51.938Z] Checked if tokens are valid: true, expires at: 1728781781096
+[debug] [2024-10-13T00:10:51.939Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/rutasabor-25dd3 [none]
+[debug] [2024-10-13T00:10:52.517Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/rutasabor-25dd3 200
+[debug] [2024-10-13T00:10:52.517Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/rutasabor-25dd3 {"projectId":"rutasabor-25dd3","projectNumber":"778820080885","displayName":"rutasabor","name":"projects/rutasabor-25dd3","resources":{"hostingSite":"rutasabor-25dd3"},"state":"ACTIVE","etag":"1_d1d4aaae-f086-47b7-b769-fcfb0a5d4cfc"}
+[debug] [2024-10-13T00:10:52.531Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-10-13T00:10:52.532Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-10-13T00:10:52.532Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-10-13T00:10:52.532Z] [dataconnect.postgres] postgres server for dataconnect only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-10-13T00:10:52.532Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"dataconnect":[{"address":"127.0.0.1","family":"IPv4","port":9399},{"address":"::1","family":"IPv6","port":9399}],"dataconnect.postgres":[{"address":"127.0.0.1","family":"IPv4","port":5432}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-10-13T00:10:52.537Z] [hub] writing locator at C:\Users\52312\AppData\Local\Temp\hub-rutasabor-25dd3.json
+[debug] [2024-10-13T00:10:52.546Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2024-10-13T00:10:52.551Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-10-13T00:10:52.552Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-10-13T00:10:52.552Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-10-13T00:10:52.552Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"dataconnect":[{"address":"127.0.0.1","family":"IPv4","port":9399},{"address":"::1","family":"IPv6","port":9399}],"dataconnect.postgres":[{"address":"127.0.0.1","family":"IPv4","port":5432}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2024-10-13T00:10:52.556Z] defaultcredentials: writing to file C:\Users\52312\AppData\Roaming\firebase\garciaquintero00_gmail_com_application_default_credentials.json
+[debug] [2024-10-13T00:10:52.559Z] Setting GAC to C:\Users\52312\AppData\Roaming\firebase\garciaquintero00_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\52312\\AppData\\Roaming\\firebase\\garciaquintero00_gmail_com_application_default_credentials.json"}}
+[debug] [2024-10-13T00:10:52.559Z] Checked if tokens are valid: true, expires at: 1728781781096
+[debug] [2024-10-13T00:10:52.560Z] Checked if tokens are valid: true, expires at: 1728781781096
+[debug] [2024-10-13T00:10:52.560Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/rutasabor-25dd3/adminSdkConfig [none]
+[debug] [2024-10-13T00:10:52.910Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/rutasabor-25dd3/adminSdkConfig 200
+[debug] [2024-10-13T00:10:52.911Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/rutasabor-25dd3/adminSdkConfig {"projectId":"rutasabor-25dd3","storageBucket":"rutasabor-25dd3.appspot.com"}
+[debug] [2024-10-13T00:10:52.936Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-10-13T00:10:52.937Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2024-10-13T00:10:52.937Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\52312\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","rutasabor-25dd3","--rules","C:\\Users\\52312\\Especialidad\\firestore.rules","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8080} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\52312\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"rutasabor-25dd3\",\"--rules\",\"C:\\\\Users\\\\52312\\\\Especialidad\\\\firestore.rules\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8080}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2024-10-13T00:10:54.914Z] Oct 12, 2024 6:10:54 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 12, 2024 6:10:54 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\r\nINFO: Started WebSocket server on ws://127.0.0.1:9150\r\n"}}
+[debug] [2024-10-13T00:10:54.974Z] API endpoint: http://127.0.0.1:8080 {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://127.0.0.1:8080"}}
+[debug] [2024-10-13T00:10:54.975Z] 
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+If you are running a Firestore in Datastore Mode project, run:
+
+   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\r\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nIf you are running a Firestore in Datastore Mode project, run:\r\n\n   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\r\nDev App Server is now running.\n\r\n"}}
+[info] +  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2024-10-13T00:10:55.388Z] I1012 18:10:55.368687   23444 control.go:45] [engine.Service /emulator/Especialidad 3f39] UpdateSchema(): done sources: schema\schema.gql [1384B] 
+I1012 18:10:55.385465   23444 control.go:73] [engine.Service /emulator/Especialidad 3f39] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1012 18:10:55.368687   23444 control.go:45] [engine.Service /emulator/Especialidad 3f39] UpdateSchema(): done sources: schema\\schema.gql [1384B] \nI1012 18:10:55.385465   23444 control.go:73] [engine.Service /emulator/Especialidad 3f39] UpdateConnector(default): done sources: connector\\mutations.gql [1163B] connector\\queries.gql [1855B] \n"}}
+[debug] [2024-10-13T00:10:55.404Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-10-13T00:10:55.404Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-10-13T00:10:55.404Z] Starting Data Connect Emulator with command {"binary":"C:\\Users\\52312\\.cache\\firebase\\emulators\\dataconnect-emulator-1.5.0.exe","args":["--logtostderr","-v=2","dev","--listen=127.0.0.1:9399,[::1]:9399","--config_dir=C:\\Users\\52312\\Especialidad\\dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"C:\\\\Users\\\\52312\\\\.cache\\\\firebase\\\\emulators\\\\dataconnect-emulator-1.5.0.exe\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=127.0.0.1:9399,[::1]:9399\",\"--config_dir=C:\\\\Users\\\\52312\\\\Especialidad\\\\dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to \u001b[1mdataconnect-debug.log\u001b[22m"}}
+[debug] [2024-10-13T00:10:55.472Z] I1012 18:10:55.438207   39636 load.go:37] Reloading schema and connectors...
+I1012 18:10:55.454674   39636 control.go:45] [engine.Service /emulator/Especialidad 1315] UpdateSchema(): done sources: schema\schema.gql [1384B] 
+I1012 18:10:55.461082   39636 control.go:73] [engine.Service /emulator/Especialidad 1315] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1012 18:10:55.438207   39636 load.go:37] Reloading schema and connectors...\nI1012 18:10:55.454674   39636 control.go:45] [engine.Service /emulator/Especialidad 1315] UpdateSchema(): done sources: schema\\schema.gql [1384B] \nI1012 18:10:55.461082   39636 control.go:73] [engine.Service /emulator/Especialidad 1315] UpdateConnector(default): done sources: connector\\mutations.gql [1163B] connector\\queries.gql [1855B] \n"}}
+[debug] [2024-10-13T00:10:55.482Z] I1012 18:10:55.478303   39636 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "C:\\Users\\52312\\Especialidad\\dataconnect-generated\\js\\default-connector"
+I1012 18:10:55.481120   39636 collector.go:107] schema extensions wrote into "C:\\Users\\52312\\Especialidad\\dataconnect\\.dataconnect\\schema"
+Generated sources: prelude.gql [60423B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1012 18:10:55.478303   39636 codegen.go:82] [connector \"default\" javascriptSdk] Generating sources into \"C:\\\\Users\\\\52312\\\\Especialidad\\\\dataconnect-generated\\\\js\\\\default-connector\"\nI1012 18:10:55.481120   39636 collector.go:107] schema extensions wrote into \"C:\\\\Users\\\\52312\\\\Especialidad\\\\dataconnect\\\\.dataconnect\\\\schema\"\nGenerated sources: prelude.gql [60423B] \n"}}
+[debug] [2024-10-13T00:10:55.483Z] I1012 18:10:55.483623   39636 collector.go:107] connector "default" javascriptSdk wrote into "C:\\Users\\52312\\Especialidad\\dataconnect-generated\\js\\default-connector"
+Generated sources: index.cjs.js [226B] package.json [623B] index.d.ts [264B] esm\index.esm.js [185B] esm\package.json [17B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1012 18:10:55.483623   39636 collector.go:107] connector \"default\" javascriptSdk wrote into \"C:\\\\Users\\\\52312\\\\Especialidad\\\\dataconnect-generated\\\\js\\\\default-connector\"\nGenerated sources: index.cjs.js [226B] package.json [623B] index.d.ts [264B] esm\\index.esm.js [185B] esm\\package.json [17B] \n"}}
+[debug] [2024-10-13T00:10:55.514Z] I1012 18:10:55.514010   39636 installsdk.go:76] Running command: C:\Program Files\nodejs\npm.cmd install file:dataconnect-generated\js\default-connector
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1012 18:10:55.514010   39636 installsdk.go:76] Running command: C:\\Program Files\\nodejs\\npm.cmd install file:dataconnect-generated\\js\\default-connector\n"}}
+[debug] [2024-10-13T00:10:57.255Z] [Data Connect] Connecting to postgres://127.0.0.1:5432/fdcdb?sslmode=disable}...
+[debug] [2024-10-13T00:10:57.256Z] >>> [apiv2][query] POST http://127.0.0.1:9399/emulator/configure [none]
+[debug] [2024-10-13T00:10:57.256Z] >>> [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {"connectionString":"postgres://127.0.0.1:5432/fdcdb?sslmode=disable","database":"fdcdb","serviceId":"Especialidad","maxOpenConnections":1}
+[debug] [2024-10-13T00:10:57.258Z] *** [apiv2] error from fetch(http://127.0.0.1:9399/emulator/configure, {"headers":{},"method":"POST","body":"{\"connectionString\":\"postgres://127.0.0.1:5432/fdcdb?sslmode=disable\",\"database\":\"fdcdb\",\"serviceId\":\"Especialidad\",\"maxOpenConnections\":1}"}): FetchError: request to http://127.0.0.1:9399/emulator/configure failed, reason: connect ECONNREFUSED 127.0.0.1:9399
+[debug] [2024-10-13T00:10:57.259Z] [Data Connect] Retrying connectToPostgress call (1 of 3 attempts): FirebaseError: Data Connect emulator: undefined
+[debug] [2024-10-13T00:10:58.653Z] I1012 18:10:58.653918   39636 load.go:105] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1012 18:10:58.653918   39636 load.go:105] Finished reloading\n"}}
+[debug] [2024-10-13T00:10:58.654Z] I1012 18:10:58.655046   39636 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1012 18:10:58.655046   39636 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399\n"}}
+[debug] [2024-10-13T00:10:58.655Z] I1012 18:10:58.655046   39636 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1012 18:10:58.655046   39636 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399\n"}}
+[debug] [2024-10-13T00:10:59.260Z] [Data Connect] Connecting to postgres://127.0.0.1:5432/fdcdb?sslmode=disable}...
+[debug] [2024-10-13T00:10:59.265Z] >>> [apiv2][query] POST http://127.0.0.1:9399/emulator/configure [none]
+[debug] [2024-10-13T00:10:59.266Z] >>> [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {"connectionString":"postgres://127.0.0.1:5432/fdcdb?sslmode=disable","database":"fdcdb","serviceId":"Especialidad","maxOpenConnections":1}
+[debug] [2024-10-13T00:10:59.279Z] Frontend message 
+[debug] [2024-10-13T00:10:59.280Z] Backend message AuthenticationResponse
+[debug] [2024-10-13T00:10:59.281Z] Backend message ParameterStatus
+[debug] [2024-10-13T00:10:59.282Z] Backend message ReadyForQuery
+[debug] [2024-10-13T00:10:59.282Z] Frontend message Query
+[debug] [2024-10-13T00:10:59.283Z] Backend message EmptyQuery
+[debug] [2024-10-13T00:10:59.283Z] Backend message ReadyForQuery
+[debug] [2024-10-13T00:10:59.291Z] Frontend message Query
+[debug] [2024-10-13T00:10:59.296Z] Backend message RowDescriptionMessage
+[debug] [2024-10-13T00:10:59.297Z] Backend message DataRow
+[debug] [2024-10-13T00:10:59.297Z] Backend message CommandComplete
+[debug] [2024-10-13T00:10:59.298Z] Backend message ReadyForQuery
+[debug] [2024-10-13T00:10:59.298Z] Frontend message Parse
+[debug] [2024-10-13T00:10:59.299Z] Backend message ParseComplete
+[debug] [2024-10-13T00:10:59.299Z] Frontend message Describe
+[debug] [2024-10-13T00:10:59.300Z] Backend message ParameterDescriptionMessage
+[debug] [2024-10-13T00:10:59.300Z] Backend message RowDescriptionMessage
+[debug] [2024-10-13T00:10:59.300Z] Frontend message Sync
+[debug] [2024-10-13T00:10:59.300Z] Backend message ReadyForQuery
+[debug] [2024-10-13T00:10:59.301Z] Frontend message Bind
+[debug] [2024-10-13T00:10:59.301Z] Backend message BindComplete
+[debug] [2024-10-13T00:10:59.302Z] Frontend message Execute
+[debug] [2024-10-13T00:10:59.303Z] Backend message DataRow
+[debug] [2024-10-13T00:10:59.303Z] Backend message CommandComplete
+[debug] [2024-10-13T00:10:59.304Z] Frontend message Sync
+[debug] [2024-10-13T00:10:59.304Z] Backend message ReadyForQuery
+[debug] [2024-10-13T00:10:59.304Z] Frontend message Parse
+[debug] [2024-10-13T00:10:59.305Z] Backend message ParseComplete
+[debug] [2024-10-13T00:10:59.305Z] Frontend message Describe
+[debug] [2024-10-13T00:10:59.305Z] Backend message ParameterDescriptionMessage
+[debug] [2024-10-13T00:10:59.306Z] Backend message RowDescriptionMessage
+[debug] [2024-10-13T00:10:59.306Z] Frontend message Sync
+[debug] [2024-10-13T00:10:59.306Z] Backend message ReadyForQuery
+[debug] [2024-10-13T00:10:59.306Z] Frontend message Bind
+[debug] [2024-10-13T00:10:59.308Z] Backend message BindComplete
+[debug] [2024-10-13T00:10:59.308Z] Frontend message Execute
+[debug] [2024-10-13T00:10:59.308Z] Backend message CommandComplete
+[debug] [2024-10-13T00:10:59.309Z] Frontend message Sync
+[debug] [2024-10-13T00:10:59.309Z] Backend message ReadyForQuery
+[debug] [2024-10-13T00:10:59.309Z] Frontend message Parse
+[debug] [2024-10-13T00:10:59.311Z] Backend message ParseComplete
+[debug] [2024-10-13T00:10:59.311Z] Frontend message Describe
+[debug] [2024-10-13T00:10:59.311Z] Backend message ParameterDescriptionMessage
+[debug] [2024-10-13T00:10:59.311Z] Backend message RowDescriptionMessage
+[debug] [2024-10-13T00:10:59.312Z] Frontend message Sync
+[debug] [2024-10-13T00:10:59.312Z] Backend message ReadyForQuery
+[debug] [2024-10-13T00:10:59.312Z] Frontend message Bind
+[debug] [2024-10-13T00:10:59.318Z] Backend message BindComplete
+[debug] [2024-10-13T00:10:59.319Z] Frontend message Execute
+[debug] [2024-10-13T00:10:59.319Z] Backend message CommandComplete
+[debug] [2024-10-13T00:10:59.319Z] Frontend message Sync
+[debug] [2024-10-13T00:10:59.320Z] Backend message ReadyForQuery
+[debug] [2024-10-13T00:10:59.320Z] Frontend message Query
+[debug] [2024-10-13T00:10:59.321Z] Backend message RowDescriptionMessage
+[debug] [2024-10-13T00:10:59.321Z] Backend message DataRow
+[debug] [2024-10-13T00:10:59.322Z] Backend message CommandComplete
+[debug] [2024-10-13T00:10:59.322Z] Backend message ReadyForQuery
+[debug] [2024-10-13T00:10:59.322Z] Frontend message Parse
+[debug] [2024-10-13T00:10:59.323Z] Backend message ParseComplete
+[debug] [2024-10-13T00:10:59.323Z] Frontend message Describe
+[debug] [2024-10-13T00:10:59.323Z] Backend message ParameterDescriptionMessage
+[debug] [2024-10-13T00:10:59.324Z] Backend message RowDescriptionMessage
+[debug] [2024-10-13T00:10:59.324Z] Frontend message Sync
+[debug] [2024-10-13T00:10:59.324Z] Backend message ReadyForQuery
+[debug] [2024-10-13T00:10:59.325Z] Frontend message Bind
+[debug] [2024-10-13T00:10:59.325Z] Backend message BindComplete
+[debug] [2024-10-13T00:10:59.325Z] Frontend message Execute
+[debug] [2024-10-13T00:10:59.326Z] Backend message DataRow
+[debug] [2024-10-13T00:10:59.326Z] Backend message CommandComplete
+[debug] [2024-10-13T00:10:59.327Z] Frontend message Sync
+[debug] [2024-10-13T00:10:59.327Z] Backend message ReadyForQuery
+[debug] [2024-10-13T00:10:59.327Z] Frontend message Parse
+[debug] [2024-10-13T00:10:59.328Z] Backend message ParseComplete
+[debug] [2024-10-13T00:10:59.329Z] Frontend message Describe
+[debug] [2024-10-13T00:10:59.329Z] Backend message ParameterDescriptionMessage
+[debug] [2024-10-13T00:10:59.329Z] Backend message RowDescriptionMessage
+[debug] [2024-10-13T00:10:59.329Z] Frontend message Sync
+[debug] [2024-10-13T00:10:59.329Z] Backend message ReadyForQuery
+[debug] [2024-10-13T00:10:59.330Z] Frontend message Bind
+[debug] [2024-10-13T00:10:59.331Z] Backend message BindComplete
+[debug] [2024-10-13T00:10:59.331Z] Frontend message Execute
+[debug] [2024-10-13T00:10:59.331Z] Backend message CommandComplete
+[debug] [2024-10-13T00:10:59.331Z] Frontend message Sync
+[debug] [2024-10-13T00:10:59.332Z] Backend message ReadyForQuery
+[debug] [2024-10-13T00:10:59.332Z] Frontend message Parse
+[debug] [2024-10-13T00:10:59.333Z] Backend message ParseComplete
+[debug] [2024-10-13T00:10:59.333Z] Frontend message Describe
+[debug] [2024-10-13T00:10:59.333Z] Backend message ParameterDescriptionMessage
+[debug] [2024-10-13T00:10:59.333Z] Backend message RowDescriptionMessage
+[debug] [2024-10-13T00:10:59.333Z] Frontend message Sync
+[debug] [2024-10-13T00:10:59.334Z] Backend message ReadyForQuery
+[debug] [2024-10-13T00:10:59.334Z] Frontend message Bind
+[debug] [2024-10-13T00:10:59.337Z] Backend message BindComplete
+[debug] [2024-10-13T00:10:59.338Z] Frontend message Execute
+[debug] [2024-10-13T00:10:59.338Z] Backend message CommandComplete
+[debug] [2024-10-13T00:10:59.339Z] Frontend message Sync
+[debug] [2024-10-13T00:10:59.339Z] Backend message ReadyForQuery
+[debug] [2024-10-13T00:10:59.339Z] Frontend message Query
+[debug] [2024-10-13T00:10:59.340Z] Backend message RowDescriptionMessage
+[debug] [2024-10-13T00:10:59.340Z] Backend message DataRow
+[debug] [2024-10-13T00:10:59.340Z] Backend message CommandComplete
+[debug] [2024-10-13T00:10:59.340Z] Backend message ReadyForQuery
+[debug] [2024-10-13T00:10:59.341Z] I1012 18:10:59.341488   39636 control.go:45] [engine.Service /emulator/Especialidad 12db] UpdateSchema(): done sources: schema\schema.gql [1384B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1012 18:10:59.341488   39636 control.go:45] [engine.Service /emulator/Especialidad 12db] UpdateSchema(): done sources: schema\\schema.gql [1384B] \n"}}
+[debug] [2024-10-13T00:10:59.341Z] I1012 18:10:59.341488   39636 control.go:73] [engine.Service /emulator/Especialidad 12db] UpdateConnector(default): done sources: connector\mutations.gql [1163B] connector\queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1012 18:10:59.341488   39636 control.go:73] [engine.Service /emulator/Especialidad 12db] UpdateConnector(default): done sources: connector\\mutations.gql [1163B] connector\\queries.gql [1855B] \n"}}
+[debug] [2024-10-13T00:10:59.342Z] <<< [apiv2][status] POST http://127.0.0.1:9399/emulator/configure 200
+[debug] [2024-10-13T00:10:59.342Z] <<< [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {}
+[debug] [2024-10-13T00:10:59.342Z] [Data Connect] Successfully connected to postgres://127.0.0.1:5432/fdcdb?sslmode=disable}
+[debug] [2024-10-13T00:10:59.351Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-10-13T00:10:59.353Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-10-13T00:10:59.353Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\52312\\.cache\\firebase\\emulators\\ui-v1.14.0\\server\\server.mjs"],"optionalArgs":[],"joinArgs":false,"shell":false,"port":4000} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\52312\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.14.0\\\\server\\\\server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false,\"shell\":false,\"port\":4000}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-10-13T00:10:59.502Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-10-13T00:10:59.502Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[debug] [2024-10-13T00:10:59.565Z] [Extensions] Connecting Extensions emulator, this is a noop.
+[info] i  functions: Watching "C:\Users\52312\Especialidad\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\52312\\Especialidad\\functions\" for Cloud Functions..."}}
+[debug] [2024-10-13T00:10:59.572Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-10-13T00:11:01.320Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-10-13T00:11:01.321Z] Building nodejs source
+[debug] [2024-10-13T00:11:01.321Z] Failed to find version of module node: reached end of search path C:\Users\52312\Especialidad\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-10-13T00:11:01.324Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-10-13T00:11:01.334Z] Found firebase-functions binary at 'C:\Users\52312\Especialidad\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8556
+
+[debug] [2024-10-13T00:11:01.690Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2024-10-13T00:11:06.711Z] defaultcredentials: writing to file C:\Users\52312\AppData\Roaming\firebase\garciaquintero00_gmail_com_application_default_credentials.json
+[debug] [2024-10-13T00:11:06.712Z] Setting GAC to C:\Users\52312\AppData\Roaming\firebase\garciaquintero00_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\52312\\AppData\\Roaming\\firebase\\garciaquintero00_gmail_com_application_default_credentials.json"}}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2024-10-13T00:11:06.714Z] >>> [apiv2][query] GET http://127.0.0.1:9399/emulator/info [none]
+[debug] [2024-10-13T00:11:06.717Z] <<< [apiv2][status] GET http://127.0.0.1:9399/emulator/info 200
+[debug] [2024-10-13T00:11:06.718Z] <<< [apiv2][body] GET http://127.0.0.1:9399/emulator/info {"version":"","services":[{"serviceId":"Especialidad","connectionString":"dbname='fdcdb' host='127.0.0.1' port='5432' sslmode='disable' dbname='fdcdb'"}]}
+[debug] [2024-10-13T00:11:06.723Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────────┬────────────────┬──────────────────────────────────┐
+│ Emulator     │ Host:Port      │ View in Emulator UI              │
+├──────────────┼────────────────┼──────────────────────────────────┤
+│ Functions    │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions  │
+├──────────────┼────────────────┼──────────────────────────────────┤
+│ Firestore    │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore  │
+├──────────────┼────────────────┼──────────────────────────────────┤
+│ Data Connect │ 127.0.0.1:9399 │ n/a                              │
+├──────────────┼────────────────┼──────────────────────────────────┤
+│ Extensions   │ 127.0.0.1:5001 │ http://127.0.0.1:4000/extensions │
+└──────────────┴────────────────┴──────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500, 9150
+┌─────────────────────────┬───────────────┬─────────────────────┐
+│ Extension Instance Name │ Extension Ref │ View in Emulator UI │
+└─────────────────────────┴───────────────┴─────────────────────┘
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-10-13T00:11:14.926Z] Oct 12, 2024 6:11:14 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 12, 2024 6:11:14 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\r\nINFO: Connected to new websocket client\r\n"}}
+[debug] [2024-10-13T00:11:23.928Z] Oct 12, 2024 6:11:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 12, 2024 6:11:23 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-10-13T00:11:24.067Z] Oct 12, 2024 6:11:24 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 12, 2024 6:11:24 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected HTTP/2 connection.\r\n"}}
+[debug] [2024-10-13T00:20:46.019Z] Received signal SIGINT (Ctrl-C) 1
+[info]  
+[info] i  emulators: Received SIGINT (Ctrl-C) for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGINT (Ctrl-C) signal again to stop right now. 
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
+[warn] !  Emulator UI has exited upon receiving signal: SIGINT 
+[info] i  extensions: Stopping Extensions Emulator {"metadata":{"emulator":{"name":"extensions"},"message":"Stopping Extensions Emulator"}}
+[debug] [2024-10-13T00:20:46.035Z] [Extensions] Stopping Extensions emulator, this is a noop.
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  firestore: Stopping Firestore Emulator {"metadata":{"emulator":{"name":"firestore"},"message":"Stopping Firestore Emulator"}}
+[warn] !  Firestore Emulator has exited upon receiving signal: SIGINT 
+[info] i  eventarc: Stopping Eventarc Emulator {"metadata":{"emulator":{"name":"eventarc"},"message":"Stopping Eventarc Emulator"}}
+[info] i  dataconnect: Stopping Data Connect Emulator {"metadata":{"emulator":{"name":"dataconnect"},"message":"Stopping Data Connect Emulator"}}
+[error] !!  Data Connect: Postgres threw an unexpected error, shutting down the Data Connect emulator: Error: read ECONNRESET {"metadata":{"emulator":{"name":"dataconnect"},"message":"Postgres threw an unexpected error, shutting down the Data Connect emulator: Error: read ECONNRESET"}}
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  dataconnect: Stopping Data Connect Emulator {"metadata":{"emulator":{"name":"dataconnect"},"message":"Stopping Data Connect Emulator"}}
+[info] i  tasks: Stopping Cloud Tasks Emulator {"metadata":{"emulator":{"name":"tasks"},"message":"Stopping Cloud Tasks Emulator"}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2024-10-13T00:20:46.076Z] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  logging: Stopping Logging Emulator {"metadata":{"emulator":{"name":"logging"},"message":"Stopping Logging Emulator"}}
+[warn] !  Data Connect Emulator has exited upon receiving signal: SIGINT 
+[info] i  tasks: Stopping Cloud Tasks Emulator {"metadata":{"emulator":{"name":"tasks"},"message":"Stopping Cloud Tasks Emulator"}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[info] i  logging: Stopping Logging Emulator {"metadata":{"emulator":{"name":"logging"},"message":"Stopping Logging Emulator"}}
+[debug] [2024-10-13T00:20:46.087Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[debug] [2024-10-13T00:20:46.088Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.

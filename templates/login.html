@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/stylesLogin.css">
+</head>
+<body>
+    <header id="nav-wrapper">
+        <nav id="nav">
+          <div class="nav left">
+            <span class="gradient skew"><h1 class="logo un-skew"><a href="/">La Ruta de Sabor de Comala</a></h1></span>
+            <button id="menu" class="btn-nav"><span class="fas fa-bars"></span></button>
+          </div>
+          <div class="nav right">
+            <a href="/" class="nav-link"><span class="nav-link-span"><span class="u-nav">Home</span></span></a>
+            <a href="/sales" class="nav-link"><span class="nav-link-span"><span class="u-nav">Ventas</span></span></a>
+
+            <a href="/login" class="nav-link active"><span class="nav-link-span"><span class="u-nav">Login</span></span></a>
+            <a href="#contact" class="nav-link"><span class="nav-link-span"><span class="u-nav">About</span></span></a>
+          </div>
+        </nav>
+      </header>
+    <main>
+      <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="email">Usuario:</label>
+            <input type="text" id="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="/register">Register here</a>.</p>
+        <div id="loginError"></div>
+    </div>
+</main>
+<script>
+  const loginForm = document.getElementById("loginForm");
+  const loginError = document.getElementById("loginError");
+
+  loginForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const username = document.getElementById("username").value; // Asegúrate de usar "username"
+      const password = document.getElementById("password").value;
+
+      try {
+          const response = await fetch('/login', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({ username, password }), // Cambia "text" a "username"
+          });
+
+          const data = await response.json(); // Asegúrate de que tu servidor devuelva JSON
+
+          if (data.error) {
+              loginError.textContent = data.error; // Muestra el error en el login
+          } else {
+              window.location.href = "/sales"; // Redirige si el login es exitoso
+          }
+      } catch (error) {
+          loginError.textContent = "An error occurred. Please try again later."; // Muestra error general
+      }
+  });
+  
+</script>
+
+</body>
+</html>

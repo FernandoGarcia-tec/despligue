@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/stylesSales.css"> <!-- Asegúrate de que la ruta sea correcta -->
+</head>
+
+<body>
+    <header id="nav-wrapper">
+        <nav id="nav">
+            <div class="nav left">
+                <span class="gradient skew"><h1 class="logo un-skew"><a href="/">La Ruta de Sabor de Comala</a></h1></span>
+                <button id="menu" class="btn-nav"><span class="fas fa-bars"></span></button>
+            </div>
+            <div class="nav right">
+                <a href="/" class="nav-link"><span class="nav-link-span"><span class="u-nav">Home</span></span></a>
+                <a href="/sales" class="nav-link active"><span class="nav-link-span"><span class="u-nav">Ventas</span></span></a>
+                <a href="/login" class="nav-link"  id="welcome-message" style="display: none;"><span class="nav-link-span"><span id="username"></span></span></a>
+                <a href="/login" class="nav-link"  id="login-link"><span class="nav-link-span"><span class="u-nav">Login</span></span></a>
+                <a href="/logout" class="nav-link"><span class="nav-link-span"><span class="u-nav">Cerrar sesion</span></span></a>
+            </div>
+        </nav>
+    </header>
+    
+   
+    
+    <main>
+        <h2>.</h2>
+        <h2>.</h2>
+        <button id="openModalBtn" class="modalStilo">Agregar</button>
+
+        <div id="productModal" class="modal">
+            <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            
+            <h2>Publicar Producto</h2>
+            <form id="productForm" action="/upload-product" method="POST" enctype="multipart/form-data">
+            <label for="productName">Nombre del Producto:</label>
+            <input type="text" id="productName" name="productName" required>
+            <label for="nombrenegocio">Nombre de negocio:</label>
+            <input type="email" id="nombrenegocio" name="nombrenegocio" readonly>
+            <label for="productEmail">Usuario:</label>
+            <input type="email" id="productEmail" name="productEmail" readonly>
+            
+            <label for="productCategory">Categoría:</label>
+            <select id="productCategory" name="productCategory" required>
+            <option value="Turismo">Turismo</option>
+            <option value="Comida">Comida</option>
+            <option value="Entretenimiento">Entretenimiento</option>
+            <option value="Hospedaje">Hospedaje</option>
+            <option value="Transporte">Transporte</option>
+            <option value="Comercio">Comercio</option>
+            <option value="Otros">Otros</option>
+            </select>
+            
+            <label for="productStock">Cantidad en Inventario:</label>
+            <input type="number" id="productStock" name="productStock" min="0" required>
+            
+            <label for="productPrice">Precio:</label>
+            <input type="number" id="productPrice" name="productPrice" step="0.01" required>
+            
+            <label for="productDescription">Descripción:</label>
+            <textarea id="productDescription" name="productDescription" required></textarea>
+            
+            <label for="productImage">Imagen:</label>
+            <input type="file" id="productImage" name="productImage" accept="image/*" required>
+            
+            <label for="productLocation">Ubicación:</label>
+            <input type="text" id="productLocation" name="productLocation" required>
+            
+            <button type="submit">Publicar</button>
+            </form>
+            </div>
+        </div>
+        
+    
+<h2 id="showmen">Mis Productos</h2>
+        <section id="product-catalog" class="ecommerce-section" style="height: 20%; width: 30%;">
+           
+            
+            <!-- Aquí se mostrarán los productos filtrados -->
+           
+       
+        </section>
+        
+        
+
+    </main>
+     <!-- Enlazar el archivo JavaScript -->
+     <script src="script\autent.js"></script>
+     <script src="script\ModalNegocioD.js">
+    </script>
+     <script src="script\modal.js">
+</script>
+<script src="script\deletepod.js">
+</script>
+    <footer>
+        <p>Proyecto de especialidad de arquitectura y servicios web avanzados</p>
+    </footer>
+
+
+</body>
+</html>
